@@ -9,6 +9,14 @@ KubeFlare is a React-based web application that provides an intuitive interface 
 - Search functionality to find specific log entries
 - Highlighted search results for better visibility
 
+## Backend Requirements
+
+This frontend application requires the KubeFlare backend service to be running. You can find the backend repository at:
+- [KubeFlare Backend](https://github.com/Amrish-Sharma/kubeflare)
+
+Make sure to set up and run the backend service before starting the frontend application.
+
+
 ## Getting Started
 
 ### Prerequisites
