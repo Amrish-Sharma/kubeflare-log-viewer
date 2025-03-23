@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  color: #333;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.select-group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+select, button {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  align-self: flex-end;
 }
 
-.App-link {
-  color: #61dafb;
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.log-viewer-container {
+  margin-top: 20px;
+}
+
+#logViewer {
+  background-color: black;
+  color: green;
+  font-family: monospace;
+  height: 300px;
+  overflow: auto;
+  padding: 10px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+}
+
+.highlighted-text {
+  background-color: yellow;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.search-container {
+  margin: 20px 0;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
