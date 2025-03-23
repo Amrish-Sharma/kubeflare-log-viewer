@@ -57,6 +57,10 @@ npm run build
 
 This will generate optimized static files in the `build` directory.
 
+## Screen
+
+![alt text](image.png)
+
 ## Docker Support
 
 A Dockerfile is provided to containerize the application. To build and run the Docker image:
